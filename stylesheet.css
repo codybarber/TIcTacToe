@@ -2,42 +2,12 @@ body {
   background-color: rgb(89, 89, 89);
 }
 
-.container {
-  text-align: center;
-}
-
-.title1 {
-  text-align: center;
-  background-color: rgb(89, 89, 89);
-  color: transparent;
-  text-shadow: 0 0 .50px rgba( 255, 255, 255, 1.0);
-  font-size: 3em;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.title2 {
-  text-align: center;
-  background-color: rgb(89, 89, 89);
-  color: transparent;
-  text-shadow: 0 0 .50px rgba( 255, 255, 255, 1.0);
-  font-size: 2em;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-p {
-  margin: 0 0 0px;
-  background-color: rgb(89, 89, 89);
-}
-
 .container-fluid {
   position: absolute;
   left: 25%;
   top: 15%;
   vertical-align: middle;
   background-color: white;
-
 }
 
 .col {
