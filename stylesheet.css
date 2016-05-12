@@ -35,7 +35,7 @@ body {
 
 .text {
   color: transparent;
-  text-shadow: 0 0 4px rgba( 255, 255, 255, 0.9);
+  text-shadow: 0 0 2.5px rgba( 255, 255, 255, 0.9);
   font-size: 7.5em;
   vertical-align: middle;
 }
