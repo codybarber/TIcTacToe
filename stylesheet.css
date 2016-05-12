@@ -39,3 +39,20 @@ body {
   font-size: 7.5em;
   vertical-align: middle;
 }
+
+button {
+  opacity: .9;
+  border-radius: 2px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+}
+
+button:hover {
+  color: black;
+}
+
+button:active {
+  background-color: white;
+}
