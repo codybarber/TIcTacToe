@@ -1,7 +1,14 @@
 body {
-  background: url(ice_age.png)
+  background-color: rgb(89, 89, 89);
 }
 
+.container-fluid {
+  position: absolute;
+  left: 25%;
+  top: 15%;
+  vertical-align: middle;
+  background-color: white;
+}
 
 .col {
   vertical-align: middle;
