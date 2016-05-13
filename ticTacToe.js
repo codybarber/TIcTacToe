@@ -91,6 +91,7 @@ $(document).ready(function() {
 });
 
 function updateScoreboard() {
+  $('.scoreboard1').text('SCOREBOARD');
   $('.scoreboard').text('X: ' + winsX + ' || O: ' + winsO + ' || Draws: ' + draws);
 }
 

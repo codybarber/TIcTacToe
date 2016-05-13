@@ -6,7 +6,15 @@ body {
   text-align: center;
   color: white;
   font-size: 3em;
+}
 
+.scoreboard1 {
+  text-align: center;
+text-decoration: underline;
+  border: 2px;
+  border-color: white;
+  color: white;
+  font-size: 4em;
 }
 
 .container {
