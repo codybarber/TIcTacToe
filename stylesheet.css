@@ -8,6 +8,7 @@ body {
   top: 15%;
   vertical-align: middle;
   background-color: white;
+
 }
 
 .col {
@@ -20,6 +21,9 @@ body {
   background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 51%,rgba(0,0,0,0) 60%,rgba(0,0,0,0) 62%,rgba(0,0,0,0.65) 69%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
   background: radial-gradient(ellipse at center,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 51%,rgba(0,0,0,0) 60%,rgba(0,0,0,0) 62%,rgba(0,0,0,0.65) 69%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .col:hover {
@@ -56,4 +60,24 @@ button:hover {
 
 button:active {
   background-color: white;
+}
+
+.winner {
+  font-family: sans-serif;
+  text-align: center;
+  color: transparent;
+  text-shadow: 0 0 .7px rgba( 255, 255, 255, 0.9);
+  font-size: 5em;
+  -webkit-animation-duration: 5000s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.draw {
+  font-family: sans-serif;
+  text-align: center;
+  color: transparent;
+  text-shadow: 0 0 .7px rgba( 255, 255, 255, 0.9);
+  font-size: 5em;
+  -webkit-animation-duration: 5000s;
+  -webkit-animation-iteration-count: infinite;
 }

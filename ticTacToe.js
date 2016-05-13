@@ -60,10 +60,14 @@ $(document).ready(function() {
       var board = getCurrentBoard();
       var winner = checkWinner(board);
       if (winner) {
+        $('.winner')
+          .text("The winner is " + winner + "!")
+          .show();
         $('.box').off();
-        alert("The winner is " + winner);
       } else if (turn >= 9) {
-        alert("Board is full. Game over.")
+        $('.draw')
+          .text("The match is a draw!")
+          .show();
         $('.box').off();
         // location.reload();
       }
