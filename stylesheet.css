@@ -41,6 +41,7 @@ body {
 }
 
 button {
+  font-family: sans-serif;
   opacity: .9;
   border-radius: 2px;
   color: white;
