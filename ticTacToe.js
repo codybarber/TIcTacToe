@@ -13,9 +13,11 @@ function checkWinner(board) {
   for (var i = 0; i < winningCombos.length; i++) {
     var combo = winningCombos[i];
     if (playerOccupiesCircles('X', combo, board)) {
+      updateScoreboard();
       return 'X';
     }
     if (playerOccupiesCircles('O', combo, board)) {
+      updateScoreboard();
       return 'O';
     }
   }
@@ -46,8 +48,13 @@ function getCurrentBoard() {
   return moves;
 }
 
+var winsO = 0;
+var winsX = 0;
+var draws = 0;
+var turn = 0;
+
+
 $(document).ready(function() {
-  var turn = 0;
   $('.box').click(function() {
     var boxText = $(this).text();
       if (turn % 2 !== 0 && boxText === "") {
@@ -60,22 +67,36 @@ $(document).ready(function() {
       var board = getCurrentBoard();
       var winner = checkWinner(board);
       if (winner) {
+        if (winner === "O") {
+          winsO++;
+        } else {
+          winsX++;
+        }
         $('.winner')
           .text("The winner is " + winner + "!")
           .show();
-        // $('.text').css("color", "yellow")
-        $('.box').off();
+        updateScoreboard();
+        $('.box').prop("disabled", true)
       } else if (turn >= 9) {
+        draws++;
         $('.draw')
           .text("The match is a draw!")
           .show();
-        $('.box').off();
-        // location.reload();
+        $('.box').prop("disabled", true)
       }
   });
+  $('.button').click(function() {
+    resetGame();
+  })
 });
 
+function updateScoreboard() {
+  $('.scoreboard').text('X: ' + winsX + ' || O: ' + winsO + ' || Draws: ' + draws);
+}
+
 function resetGame() {
+  turn = 0;
+  $('.box').prop("disabled", false)
   $('.box').text("");
   $('.winner').hide();
   $('.hide').hide();
