@@ -63,6 +63,7 @@ $(document).ready(function() {
         $('.winner')
           .text("The winner is " + winner + "!")
           .show();
+        // $('.text').css("color", "yellow")
         $('.box').off();
       } else if (turn >= 9) {
         $('.draw')
@@ -73,3 +74,9 @@ $(document).ready(function() {
       }
   });
 });
+
+function resetGame() {
+  $('.box').text("");
+  $('.winner').hide();
+  $('.hide').hide();
+}
